@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // let arr=[5,60,9,10,20]
+        // let pos=2
+        // let num=70
+       
+        // for(i=arr.length-1; i>=pos; i--){
+        //     console.log(i, "index", arr[i])
+        //     if(i>=pos){
+        //         arr[i+1]=arr[i]
+        //         if(i==pos){
+        //             arr[i]=num
+        //         }
+        //     }
+        //     console.log(arr);
+        // }
+
+        function fun(){
+
+            let arr=[5,60,9,10,20]
+        let pos=document.getElementById('pos').value;
+        let num=Number(document.getElementById('val').value);
+       console.log(typeof num)
+        for(i=arr.length-1; i>=pos; i--){
+            console.log(i, "index", arr[i])
+            if(i>=pos){
+                arr[i+1]=arr[i]
+                if(i==pos){
+                    arr[i]=num
+                }
+            }
+            
+        }
+        console.log(arr); 
+        }
+
+
+
+    </script>
+</head>
+<body>
+    <input type="number" id="val" placeholder="Enter Nummber">
+    <input type="number" id="pos" placeholder="Enter position">
+    <button onclick="fun()">Enter</button>
+</body>
+</html>
