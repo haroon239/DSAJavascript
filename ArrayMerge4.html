@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+          let arr1=[20,36,56]
+          let arr2=[30,40,65]
+          let newarr=[]
+          let sortarr=[]
+          for(i=0;i<arr1.length;i++){
+             newarr[i]=arr1[i]
+          }
+          for(i=0;i<arr2.length;i++){
+            newarr[arr1.length+i]=arr2[i]
+            console.log(i,"i",newarr.length)
+          }
+      for(i=0;i<newarr.length; i++){
+        for(j=i+1;j<newarr.length;j++){
+            if(newarr[i]>newarr[j]){
+            let temp=newarr[i];
+            newarr[i]=newarr[j];
+            newarr[j]=temp
+            }
+        }
+      }
+    console.log(newarr)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
