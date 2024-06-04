@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeletionArray</title>
+
+<script>
+    // let arr=[2,20,65,45,99,28]
+    // let index=3;
+    // for(i=0;i<arr.length-1; i++){
+    //     if(i>=index){
+    //        arr[i]=arr[i+1];
+    //     }
+    //     console.log("index ",i," of",arr[i]);
+        
+    // }
+    // arr.length=arr.length-1
+    // console.log(arr,"new array")
+
+
+    function fun(){
+        const inde=document.getElementById('inp').value;
+        alert(inde)
+        let arr=[2,20,65,45,99,28]
+    let index=inde;
+    for(i=0;i<arr.length-1; i++){
+        if(i>=index){
+           arr[i]=arr[i+1];
+        }
+        console.log("index ",i," of",arr[i]);
+        
+    }
+    arr.length=arr.length-1
+    console.log(arr,"new array")
+    }
+</script>
+
+</head>
+<body>
+
+    <input type="number" id="inp" placeholder="Please index number">
+    <button  onclick="fun()">delete</button>
+</body>
+</html>
